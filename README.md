@@ -19,4 +19,4 @@ We have in our project made changes that are specific to the number of datapoint
 3) Make changes to the code before training as mentioned in the note above.
 4) Convert the project to a jar and run.
 
-The weights must be initialized to the dimension of the features of datapoints. Also please refer to the docx file to see how the code is implemented.
+The weights must be initialized to the dimension of the features of datapoints. Also please refer to the docx file to see how the code is implemented. Also we have uploaded small datasets for reference on the format of dataset files.
