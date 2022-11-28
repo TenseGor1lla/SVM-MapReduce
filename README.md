@@ -12,3 +12,11 @@ The datapoints in the dataset form a binary classification task with 2 features 
 
 Note:
 We have in our project made changes that are specific to the number of datapoints manually in the applyGradients function in the SVM.java class. Whenever the dataset is changed i.e. for training or testing, the number of datapoints must be changed manually. For Eg)- weights[i] -= w.get(i)/22500000; line must be changed in the applyGradients class.Hence, if in our dataset only 10,000 datapoints were present then we must change it to weights[i] -= w.get(i)/10000, the same must be done for the bias value as well. Also, the paths to weights and bias files must be changed according to the path of these files in one's own HDFS path for these files.
+
+# Usage steps:
+1) Add a dataset,weights and bias text files to the HDFS.
+2) Make changes to the code to point to the paths of these files in both SVM.java and Prediction.java files.
+3) Make changes to the code before training as mentioned in the note above.
+4) Convert the project to a jar and run.
+
+The weights must be initialized to the dimension of the features of datapoints. Also please refer to the docx file to see how the code is implemented.
